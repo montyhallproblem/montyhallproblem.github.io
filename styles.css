@@ -67,7 +67,7 @@ footer {margin-top: 10vw;}
 .frame {
   display: grid;
 }
-@media screen and (min-width: 669px) {
+@media screen and (min-width: 769px) {
 .restartbtn {background-color: black;
   color: white;
   border: none;
