@@ -1,0 +1,103 @@
+.container {
+  display:flex;
+ justify-content: center;
+ align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 13.5vw;
+  margin-right: 2.5vw;
+}
+
+ h1 {
+  text-align: center;
+}
+li {
+  font-weight: bold;
+  font-size: 20px;
+} 
+
+.restart{
+  text-align: center;
+}
+
+.restartbtn {background-color: black;
+color: white;
+border: none;
+border-radius: 10px;
+padding: 1vw;
+font-size: 4vw;
+cursor: pointer;
+}
+footer {margin-top: 10vw;}
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.door-front {
+  background-image: url("doorimg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid brown;
+  height: 32vw;
+  width: 14vw;
+  transform: none;
+  position: absolute;
+}
+
+.door-back {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 32.2vw;
+  width: 14.2vw;
+}
+.door-back2 {
+ background-image: url("car.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+  height: 32.2vw;
+  width: 14.2vw;
+}
+
+.frame {
+  display: grid;
+}
+@media screen and (min-width: 669px) {
+.restartbtn {background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 1vh;
+  font-size: 3.5vh;
+  }
+.door-front {
+  background-image: url("doorimg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid brown;
+  height: 36vh;
+  width: 16vh;
+  transform: none;
+  position: absolute;
+}
+
+.door-back {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 36.2vh;
+  width: 16.2vh;
+}
+.door-back2 {
+ background-image: url("car.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+  height: 36.2vh;
+  width: 16.2vh;
+}
+}
