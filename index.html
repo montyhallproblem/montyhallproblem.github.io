@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Monty hall problem</h1>
+    <ol>
+      <li>There's 1 car behind a random door</li>
+      <li>Once you choose a door, a different door without the car will open</li>
+      <li>Leaving you now with 2 choices</li>
+      <li>You can change your choice or choose the same door again</li>
+      <li>Which decision has a higher probability of finding the car?</li>
+      <li>Or are they equal?</li>
+    </ol>
+
+
+    <div class="container">
+      <div class="frame">
+        <button class="btn1" onclick="rotate1(btn1, door1)">
+          <div class="door-front"></div>
+        </button>
+        <div class="door-back"></div>
+      </div>
+      <div class="frame">
+        <button class="btn2" onclick="rotate2(btn2, door2)">
+          <div class="door-front"></div>
+        </button>
+        <div class="door-back"></div>
+      </div>
+      <div class="frame">
+        <button class="btn3" onclick="rotate3(btn3, door3)">
+          <div class="door-front"></div>
+        </button>
+        <div class="door-back"></div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="restart">
+      <button class="restartbtn" type="submit" onClick="refreshPage()">
+        Restart
+      </button>
+    </div>
+    <script src="script.js"></script>
+    <footer></footer>
+  </body>
+</html>
