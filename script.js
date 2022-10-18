@@ -25,9 +25,9 @@ $(random).css("background-image", "url('car.png')");
     
 
 function rotate1(button, door) {
- if (random == myarray[1]) {random2 = myarray2[2]}
+ if (random == myarray[1]||random == myarray[0]) {random2 = myarray2[2]}
  // if the random car door is in door 2 then open door 3
- if (random == myarray[2]) {random2 = myarray2[1]}
+ if (random == myarray[2]||random == myarray[0]) {random2 = myarray2[1]}
   $(random2).css("transition", "transform 1s")
   .css("transform-origin", "0% 50%")
   .css("transform", "rotateY(-140deg)");
@@ -38,8 +38,8 @@ function rotate1(button, door) {
 };
 
 function rotate2(button, door) {
- if (random == myarray[0]) {random2 = myarray2[2]}
- if (random == myarray[2]) {random2 = myarray2[0]}
+ if (random == myarray[0] || random == myarray[1]) {random2 = myarray2[2]}
+ if (random == myarray[2] || random == myarray[1]) {random2 = myarray2[0]}
   $(random2).css("transition", "transform 1s")
   .css("transform-origin", "0% 50%")
   .css("transform", "rotateY(-140deg)");
@@ -49,8 +49,8 @@ function rotate2(button, door) {
   $(".btn3").attr("onclick", "rotateRest(btn3, door3)");
 };
 function rotate3(button, door) {
- if (random == myarray[1]) {random2 = myarray2[0]}
- if (random == myarray[0]) {random2 = myarray2[1]}
+ if (random == myarray[1]|| random == myarray[2]) {random2 = myarray2[0]}
+ if (random == myarray[0]|| random == myarray[2]) {random2 = myarray2[1]}
   $(random2).css("transition", "transform 1s")
   .css("transform-origin", "0% 50%")
   .css("transform", "rotateY(-140deg)");
